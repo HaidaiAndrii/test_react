@@ -1,5 +1,5 @@
 import './App.css';
-import { userState, useState } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [userEmail, setEmail] = useState('');
@@ -26,7 +26,9 @@ function App() {
       setPassError(false)
     }
 
-    alert(`Email: ${userEmail}, Password: ${userPass}`);
+    if(userEmail && userPass) {
+      alert(`Email: ${userEmail}, Password: ${userPass}`);
+    }
   }
 
   return (

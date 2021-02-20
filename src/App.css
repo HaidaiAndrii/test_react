@@ -299,6 +299,11 @@ body {
     z-index: 2;
     transform: rotate(35deg);
   }
+
+  .login__button {
+    width: 163px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 450px) {
