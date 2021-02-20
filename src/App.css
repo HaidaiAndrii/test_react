@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: Roboto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  background: #EEF2F5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login {
+  position: relative;
+  height: 100vh;
+  background-position: bottom;
+  background-image: url(./images/Rectangle14.png);
+  background-repeat: no-repeat;
+}
+
+.login__image {
+  background-image: url(./images/11.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100vh;
+  width: 600px;
+  background-size: cover;
+}
+
+.login__form {
+  position: absolute;
+  background-color: white;
+  margin: 10vh 20vh 0 55vw ;
+  width: 500px;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #FEFEFE;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.login__input {
+  margin: 10px 0px;
+  width: 260px;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #B2B7BB;
+  border-radius: 10px;
+}
+
+.input__password {
+  position: relative;
+}
+
+.password__eye {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  background-image: url(./images/Vector.png);
+  width: 18px;
+  height: 12px;
+}
+
+.login__button {
+  width: 212px;
+  height: 48px;
+  background: linear-gradient(90deg, #FF9146 0%, #FF351B 100%);
+  border: none;
+  border-radius: 5px;
   color: white;
+  margin-top: 100px;
+  margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.login__link {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  text-decoration-line: underline;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #B2B7BB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register {
+  display: flex;
+}
+
+.register__text {
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #B2B7BB;
+  margin-right: 10px;
+}
+
+.register__link {
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #4285F4;
+  padding-top: 15px;
+}
+
+.error {
+  padding-right: 140px;
+}
+
+.error-pass {
+  padding-left: 18px;
+}
+
+.error__text {
+  font-size: 14px;
+  line-height: 19px;
+  color: #F4604D;
 }
